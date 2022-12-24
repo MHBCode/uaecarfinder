@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    width: 100%;
+    background-color: white;
+  }
+nav h1{
+    margin-left: 10px;
+    background: linear-gradient(90deg, rgba(93,213,123,0.7628093473717612) 0%, rgba(221,56,56,1) 100%);
+    background-clip: unset;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* CSS for styling the select element and adding an icon */
+  
+  select {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    /* Add a border around the element */
+    border: 0;
+    /* Change the appearance of the dropdown arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  select option{
+    text-align: center;
+  }
+
+  
+  
+  
+  
+  
