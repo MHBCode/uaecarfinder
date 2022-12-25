@@ -12,12 +12,34 @@
     <img src="assets/head.JPG" alt="head">
   </div>
   <div class="signin">
-    <input type="text" required placeholder="Username">
-    <input type="password" pattern=".*" required placeholder="Password"> 
-    <div class="signin-a"><a href="home.html">LogIn</a></div>
+    <input id="username" type="text" required placeholder="Username">
+    <input id="password" type="password" pattern=".*" required placeholder="Password"> 
+    <div class="signin-a"><a id="login" href="home.html">LogIn</a></div>
   </div>
   <div class="trouble">
     <p>Trouble logining in?</p><a href="support.html">Request Support!</a>
   </div>
+<script>
+  const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
+  const loginAnchor = document.getElementById('login');
+
+  usernameInput.addEventListener('input', () => {
+    if (usernameInput.value === 'admin' && passwordInput.value === 'admin') {
+      loginAnchor.removeAttribute('disabled');
+    } else {
+      loginAnchor.setAttribute('disabled', true);
+    }
+  });
+
+  passwordInput.addEventListener('input', () => {
+    if (usernameInput.value === 'admin' && passwordInput.value === 'admin') {
+      loginAnchor.removeAttribute('disabled');
+    } else {
+      loginAnchor.setAttribute('disabled', true);
+    }
+  });
+</script>
+
 </body>
 </html>
