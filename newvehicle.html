@@ -5,11 +5,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="navstyle.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="newvehicle.css">
 </head>
 <body>
-    <div style="width: 100%; text-align: center; position: absolute; top: 48%;">
-  <p>Under Development</p>
+  <nav>
+    <h1>UAE CarFinder / New Car</h1>
+    <!-- HTML for the select element -->
+    <div class="select-container">
+      <select>
+    <option value="">👤</option>
+    <option value="option1">Profile</option>
+    <option value="option2">wallet</option>
+    <option value="option3">Sittings</option>
+      </select>
+    </div>
+  </nav>
+  
+    <form class="picture-input">
+      <div>
+        <label for="cameraInputfront">Front</label>
+        <input type="file" accept="image/*" capture id="cameraInputfront" style="display: none;">
+        <button type="button" onclick="document.getElementById('cameraInput').click();">📷</button>
+      </div>
+      <div>
+        <label for="cameraInputrear">Rear</label>
+        <input type="file" accept="image/*" capture id="cameraInputrear" style="display: none;">
+        <button type="button" onclick="document.getElementById('cameraInput').click();">📷</button>
+      </div>
+      <div>
+        <label for="cameraInputleft">Left</label>
+        <input type="file" accept="image/*" capture id="cameraInputleft" style="display: none;">
+        <button type="button" onclick="document.getElementById('cameraInput').click();">📷</button>
+      </div>
+      <div>
+        <label for="cameraInputright">Right</label>
+        <input type="file" accept="image/*" capture id="cameraInputright" style="display: none;">
+        <button type="button" onclick="document.getElementById('cameraInput').click();">📷</button>
+      </div>
+    </form> 
+    <div class="signin">
+      <input type="text" required placeholder="Chassis Number">
+      <input type="text" pattern=".*" required placeholder="Plate Number"> 
+      <input type="text" required placeholder="Brand">
+      <input type="text" pattern=".*" required placeholder="Building"> 
+      <input type="text" required placeholder="Parking level">
+      <input type="Text" pattern=".*" required placeholder="Description"> 
+      <div class="signin-a"><a href="home.html">Submit</a></div>
     </div>
 </body>
 </html>
