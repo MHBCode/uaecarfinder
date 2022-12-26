@@ -52,7 +52,16 @@
       <input type="text" pattern=".*" required placeholder="Building"> 
       <input type="text" required placeholder="Parking level">
       <input type="Text" pattern=".*" required placeholder="Description"> 
-      <div class="signin-a"><a href="home.html">Submit</a></div>
+      <div class="signin-a"><a id="submit" href="home.html">Submit</a></div>
     </div>
+    <script>
+      function showPopup() {
+        alert("Submit success and waiting for review!");
+      }
+      var link = document.getElementById("submit");
+      link.addEventListener("click", showPopup);
+    </script>
+
+
 </body>
 </html>
