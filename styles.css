@@ -37,14 +37,14 @@ body{
     margin: 10px;
     width: 80%;
     color: black;
-    font-weight: bold;
+    font-weight: 200;
     font-size: 20px;
 }
 .signin a{
     background-color: rgba(120, 177, 120, 0.6);
     color: white;
     font-size: x-large;
-    font-weight: bold;
+    font-weight:200;
     padding: 6px 30px;
     border-radius: 10px;
     text-decoration: none;
