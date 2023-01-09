@@ -25,7 +25,7 @@ label{
 .picture-input button{
     border: none;
     border-radius: 5px;
-    background-color: rgba(120, 177, 120, 0.6);
+    background-color: white;
     font-size: larger;
     cursor: pointer;
 }
