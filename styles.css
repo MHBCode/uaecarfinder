@@ -2,6 +2,13 @@
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    background-image: url(assets/bg.JPG);
+    background-size: cover;
+}
+@media screen and  (min-width:1000px) {
+    body{
+        background-image: url(assets/bgbig.JPG);
+    }
 }
 
 .head-div img{
@@ -25,6 +32,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-left: 10%;
+    color: white;
 }
 .trouble a{
     color: rgb(165, 220, 165);
@@ -36,9 +44,13 @@ body{
     outline: 0;
     margin: 10px;
     width: 80%;
-    color: black;
+    color: white;
     font-weight: 200;
     font-size: 20px;
+    background-color: transparent;
+}
+::placeholder{
+    color: white;
 }
 .signin a{
     background-color: rgba(120, 177, 120, 0.6);
